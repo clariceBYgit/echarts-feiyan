@@ -5,7 +5,8 @@ import React, { Component } from 'react'
 
 export default class Map extends Component {
     componentDidMount(){
-        let  provincesObj  = this.props.provincesObj
+        let  { provincesObj }  = this.props
+        // console.log(this.props)
         function randomValue() {
             return Math.round(Math.random()*1000);
         }
@@ -73,7 +74,7 @@ export default class Map extends Component {
                 top: 'bottom',
                 text: ['高','低'],//取值范围的文字
                 inRange: {
-                    color: ['#eeefff', '#ff0000']//取值范围的颜色
+                    color: ['#f5deb3', '#880000']//取值范围的颜色
                 },
                 show:true//图注
             },

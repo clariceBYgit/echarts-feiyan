@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 // 引入地图组件
 import Map from './Map'
-
+// 引入搜索组件
+import Search from './Search'
 
 // 全国肺炎疫情的数据  json数据的文件需要放到src文件夹下
 import json from '../../feiyan.json'
@@ -67,6 +68,8 @@ export default class EpidemicMap extends Component {
             <>
               <h1>中国肺炎疫情图</h1>
                 <Map provincesObj={provincesObj} />
+                <Search provincesObj={provincesObj} />
+            
               <ul>
                   <li>
                       <span>地区</span>
